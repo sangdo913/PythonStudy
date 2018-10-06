@@ -1,0 +1,18 @@
+<html>
+<head>
+        <title>Tistory OAuth 2.0 Sample - Example Implicit Grant </TITLE>
+</head>
+<body>
+    <script>
+            if (window.location.hash) {
+            alert(window.location.hash.substring(1));
+        }
+    </script>
+    <form method="get" action="https://www.tistory.com/oauth/authorize/">
+        <input type="hidden" name="client_id" value="915cef83af53385eaa94db9f10ada058"/>
+        <input type="hidden" name="redirect_uri" value="http://localhost:8080/Desktop/Git/Phthon/tistory/tistory.html"/>
+        <input type="hidden" name="response_type" value="token"/>
+            <button type="submit">get access_token!</button>
+    <form>
+</body>
+</html>
